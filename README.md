@@ -19,9 +19,14 @@ Firebase realtime library for c# using rest API
     };
 
     get.OnFail = (exception) => {
-        /*  thow it! */
+        /*  throw it! */
     }
-    
+    // or 
+    get.OnComplete = (firebase_operation) => {
+        // firebase_operation.OperationState, true, false
+        // firebase_operation.OperationResult, string, null
+        // firebase_operation.ThrownException, Exception, null
+    };
     get.Start() /* try StartAsync() instead */
 
 
