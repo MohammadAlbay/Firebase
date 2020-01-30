@@ -1,4 +1,11 @@
-﻿using System;
+﻿
+/*\
+$$$  Project : Firebase
+$$$  Author  : Modetor
+$$$  Started : 29.1.2020 12:47AM (it's midnight ^_^)
+$$$  
+\*/
+using System;
 using System.IO;
 using System.Net;
 using System.Text;
