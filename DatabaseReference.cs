@@ -1,4 +1,3 @@
-﻿
 /*\
 $$$  Project : Firebase
 $$$  Author  : Modetor
