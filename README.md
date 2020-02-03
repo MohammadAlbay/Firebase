@@ -12,22 +12,22 @@ Firebase realtime library for c# using rest API
 
 **Retrieving data**
 
-    FirebaseEventHandler get = child.Get();
-    get.Timeout = ...
+    FirebaseEventHandler get = child.Get(RetrievedDataType.JSON);
+    get.Timeout = 10000;
     get.OnSuccess = (result) => {
         /* whatever */
     };
 
     get.OnFail = (exception) => {
         /*  throw it! */
-    }
+    };
     // or 
     get.OnComplete = (firebase_operation) => {
         // firebase_operation.OperationState, true, false
         // firebase_operation.OperationResult, string, null
         // firebase_operation.ThrownException, Exception, null
     };
-    get.Start() /* try StartAsync() instead */
+    get.Start(); /* try StartAsync() instead */
 
 
 **Add data with unique key**
