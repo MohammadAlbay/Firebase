@@ -45,11 +45,12 @@ Firebase realtime library for c# using rest API
 **Update**
     
     // 1.
-    // updates only "expiration_date" without erasing other childs
+    // erasing other nodes
     FirebaseEventHandler update = child.Update(new { expiration_date = "28/2/2020" });
     /* the same event-handling way as mentioned above */
     
     // 2.
+    // updates only "expiration_date" without erasing other childs
     FirebaseEventHandler put = child.Child("expiration_date").Put("1/1/1899");
     /* the same event-handling way as mentioned above */
     
